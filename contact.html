@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOOK' OOK</title>
+    <style>
+        @font-face {
+            font-family: 'zook';
+            src: url('fonts/zook.ttf');
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: url('img/ciel.jpg') no-repeat center bottom fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+        }
+        .social-media {
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+        }
+        .social-media a img {
+            display: block;
+            width: 50px;
+            margin: 0 10px;
+            transition: filter 0.3s ease;
+        }
+
+        .social-media a img:hover {
+            filter: brightness(0.8);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .home-link {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        #clickable-text {
+            text-decoration: none;
+            font-size: xx-large;
+            font-family: 'zook';
+            color: white;
+            cursor: pointer;
+            transition: filter 0.3s ease;
+        }
+        #clickable-text:hover {
+            color: lightgray;
+            filter: brightness(0.8);
+        }
+    </style>
+<head>
+    <body>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="icons/youtube.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="icons/bandcamp.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="home-link">
+                <a id="clickable-text" href="index.html">ZOOK'OOK</a>
+            </div>
+            
+        </div>
+    </body>
+</html>
